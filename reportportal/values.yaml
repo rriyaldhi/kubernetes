@@ -176,7 +176,7 @@ postgresql:
     port: 5432
     user: rpuser
     dbName: reportportal
-    password: postgres
+    password:
 
 elasticsearch:
   installdep:
