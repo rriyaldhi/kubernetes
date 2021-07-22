@@ -244,5 +244,3 @@ rbac:
 rp:
   infoEndpoint: "/info"
   healthEndpoint: "/health"
-
-""
