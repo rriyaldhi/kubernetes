@@ -154,25 +154,25 @@ serviceanalyzertrain:
   serviceAccountName: ""
 
 rabbitmq:
-  SecretName: ""
+  SecretName: rabbitmq
   installdep:
     enable: false
   endpoint:
     cloudservice: false
-    address: <rabbitmq_chart_name>.default.svc.cluster.local
+    address: rabbitmq.default.svc.cluster.local
     port: 5672
     user: rabbitmq
     apiport: 15672
     apiuser: rabbitmq
-    password:
+    password: rabbitmq
 
 postgresql:
-  SecretName: ""
+  SecretName: postgresql
   installdep:
     enable: false
   endpoint:
     cloudservice: false
-    address: <postgresql_chart_name>-postgresql.default.svc.cluster.local
+    address: postgresql.default.svc.cluster.local
     port: 5432
     user: rpuser
     dbName: reportportal
@@ -184,15 +184,15 @@ elasticsearch:
   endpoint: http://elasticsearch-master:9200
 
 minio:
-  secretName: ""
+  secretName: minio
   enabled: true
   installdep:
     enable: false
-  endpoint: http://<minio-release-name>.default.svc.cluster.local:9000
-  endpointshort: <minio-release-name>.default.svc.cluster.local:9000
+  endpoint: http://minio.default.svc.cluster.local:9000
+  endpointshort: minio.default.svc.cluster.local:9000
   region:
-  accesskey: <minio-accesskey>
-  secretkey: <minio-secretkey>
+  accesskey: miniominio
+  secretkey: miniominio
   bucketPrefix:
   defaultBucketName:
   integrationSaltPath:
@@ -244,4 +244,3 @@ rbac:
 rp:
   infoEndpoint: "/info"
   healthEndpoint: "/health"
-
