@@ -1,4 +1,4 @@
-""## String to partially override reportportal.fullname template (will maintain the release name)
+## String to partially override reportportal.fullname template (will maintain the release name)
 ##
 # nameOverride:
 
@@ -154,7 +154,7 @@ serviceanalyzertrain:
   serviceAccountName: ""
 
 rabbitmq:
-  SecretName: ""
+  SecretName: rabbitmq
   installdep:
     enable: false
   endpoint:
@@ -167,7 +167,7 @@ rabbitmq:
     password: rabbitmq
 
 postgresql:
-  SecretName: ""
+  SecretName: postgresql-postgresql
   installdep:
     enable: false
   endpoint:
