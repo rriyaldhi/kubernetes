@@ -154,7 +154,7 @@ serviceanalyzertrain:
   serviceAccountName: ""
 
 rabbitmq:
-  SecretName: "rabbitmq"
+  SecretName: ""
   installdep:
     enable: false
   endpoint:
@@ -167,7 +167,7 @@ rabbitmq:
     password: rabbitmq
 
 postgresql:
-  SecretName: "postgresql-postgresql"
+  SecretName: ""
   installdep:
     enable: false
   endpoint:
