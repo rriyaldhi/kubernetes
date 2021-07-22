@@ -159,12 +159,12 @@ rabbitmq:
     enable: false
   endpoint:
     cloudservice: false
-    address: <rabbitmq_chart_name>.default.svc.cluster.local
+    address: rabbitmq.default.svc.cluster.local
     port: 5672
     user: rabbitmq
     apiport: 15672
     apiuser: rabbitmq
-    password:
+    password: rabbitmq
 
 postgresql:
   SecretName: ""
@@ -172,11 +172,11 @@ postgresql:
     enable: false
   endpoint:
     cloudservice: false
-    address: <postgresql_chart_name>-postgresql.default.svc.cluster.local
+    address: postgresql-postgresql.default.svc.cluster.local
     port: 5432
     user: rpuser
     dbName: reportportal
-    password:
+    password: postgres
 
 elasticsearch:
   installdep:
